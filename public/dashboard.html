@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlayNova - Dashboard</title>
+
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #080d1b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+header {
+  background: #151e32;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #263653;
+}
+.logo { color: #00d4ff; font-size: 23px; font-weight: bold; }
+.logout {
+  background: #ff5252;
+  color: white;
+  padding: 9px 14px;
+  border-radius: 7px;
+  text-decoration: none;
+}
+.container { padding: 20px; max-width: 900px; margin: auto; }
+.welcome {
+  background: #151e32;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.welcome h2 { color: #00d4ff; }
+.section-title { margin: 25px 0 12px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 14px;
+}
+.card {
+  background: #151e32;
+  border: 1px solid #263653;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+.card .emoji { font-size: 30px; }
+.card h3 { color: #00d4ff; }
+.card p { color: #aab7cc; font-size: 13px; }
+.card a {
+  display: inline-block;
+  background: #00d4ff;
+  color: #07111c;
+  padding: 9px 15px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.info {
+  background: #151e32;
+  padding: 18px;
+  border-radius: 12px;
+  line-height: 2;
+}
+footer {
+  text-align: center;
+  color: #7d8ba5;
+  padding: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">PLAYNOVA</div>
+  <a class="logout" href="login.html">Logout</a>
+</header>
+
+<div class="container">
+
+  <div class="welcome">
+    <h2>Welcome to PlayNova!</h2>
+    <p>Your Gaming Dashboard</p>
+    <p>Manage your profile and explore the game lobby.</p>
+  </div>
+
+  <h2 class="section-title">My Account</h2>
+
+  <div class="grid">
+    <div class="card">
+      <div class="emoji">👤</div>
+      <h3>My Profile</h3>
+      <p>View your profile</p>
+      <a href="#profile">Open</a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🎮</div>
+      <h3>Game Lobby</h3>
+      <p>Explore available games</p>
+      <a href="#games">Explore</a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">⚙️</div>
+      <h3>Settings</h3>
+      <p>Account settings</p>
+      <a href="#settings">Open</a>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="profile">Account Information</h2>
+
+  <div class="info">
+    <div>Username: Demo User</div>
+    <div>Account Status: Demo</div>
+    <div>Account Type: Standard</div>
+  </div>
+
+  <h2 class="section-title" id="games">Game Lobby</h2>
+
+  <div class="grid">
+    <div class="card">
+      <div class="emoji">🎰</div>
+      <h3>Slots</h3>
+      <p>Coming Soon</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🕹️</div>
+      <h3>Arcade</h3>
+      <p>Coming Soon</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🚀</div>
+      <h3>Crash Games</h3>
+      <p>Coming Soon</p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🎲</div>
+      <h3>Live Games</h3>
+      <p>Coming Soon</p>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="settings">Settings</h2>
+  <div class="info">
+    Account settings will be available in a future update.
+  </div>
+
+</div>
+
+<footer>© 2026 PlayNova. All Rights Reserved.</footer>
+
+</body>
+</html>
