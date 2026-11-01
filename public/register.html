@@ -77,6 +77,22 @@
       document.getElementById("message").textContent =
         "Demo only: Registration is not connected yet.";
     });
-  </script>
+  <script>
+document.getElementById("registerForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const inputs = this.querySelectorAll("input");
+  const password = inputs[3].value;
+  const confirmPassword = inputs[4].value;
+
+  if (password !== confirmPassword) {
+    document.getElementById("message").textContent =
+      "Passwords do not match!";
+    return;
+  }
+
+  window.location.href = "dashboard.html";
+});
+</script>
 </body>
 </html>
