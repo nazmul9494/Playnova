@@ -75,6 +75,11 @@
       document.getElementById("message").textContent =
         "Demo only: Login authentication is not connected yet.";
     });
-  </script>
+  <script>
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  window.location.href = "dashboard.html";
+});
+</script>
 </body>
 </html>
