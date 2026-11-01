@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayNova - Register</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #080d1b;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    .register-box {
+      width: 90%;
+      max-width: 400px;
+      padding: 30px;
+      background: #151e32;
+      border: 1px solid #263653;
+      border-radius: 15px;
+      text-align: center;
+    }
+    h1 { color: #00d4ff; }
+    p { color: #aab7cc; }
+    input {
+      width: 100%;
+      padding: 14px;
+      margin: 9px 0;
+      border: 1px solid #34445f;
+      border-radius: 8px;
+      background: #0b1324;
+      color: white;
+      font-size: 15px;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 15px;
+      border: 0;
+      border-radius: 8px;
+      background: #00d4ff;
+      color: #07111c;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    a { color: #00d4ff; text-decoration: none; }
+    #message { color: #ffd166; margin-top: 15px; }
+  </style>
+</head>
+<body>
+  <div class="register-box">
+    <h1>PLAYNOVA</h1>
+    <p>Create Your Account</p>
+
+    <form id="registerForm">
+      <input type="text" placeholder="Full Name" required>
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <button type="submit">REGISTER</button>
+    </form>
+
+    <div id="message"></div>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+    <p><a href="index.html">← Back to Home</a></p>
+  </div>
+
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("message").textContent =
+        "Demo only: Registration is not connected yet.";
+    });
+  </script>
+</body>
+</html>
