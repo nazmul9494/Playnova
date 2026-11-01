@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlayNova - Admin Panel</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#080d1b;color:white;font-family:Arial,sans-serif}
+header{background:#151e32;padding:18px;display:flex;justify-content:space-between;align-items:center}
+.logo{color:#00d4ff;font-size:23px;font-weight:bold}
+.container{max-width:950px;margin:auto;padding:20px}
+h2{color:#00d4ff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:15px}
+.card{background:#151e32;border:1px solid #263653;border-radius:12px;padding:20px;text-align:center}
+.number{font-size:30px;color:#00d4ff;font-weight:bold}
+button{padding:10px 16px;background:#00d4ff;color:#07111c;border:0;border-radius:7px;font-weight:bold}
+a{color:#00d4ff;text-decoration:none}
+.info{background:#151e32;padding:20px;border-radius:12px;margin-top:20px;line-height:2}
+footer{text-align:center;color:#8290a8;padding:25px}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">PLAYNOVA ADMIN</div>
+<a href="index.html">Home</a>
+</header>
+
+<div class="container">
+
+<h2>Admin Dashboard</h2>
+<p>Welcome to PlayNova Administration Panel.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Total Users</h3>
+<div class="number">0</div>
+<p>Demo Data</p>
+</div>
+
+<div class="card">
+<h3>Active Users</h3>
+<div class="number">0</div>
+<p>Demo Data</p>
+</div>
+
+<div class="card">
+<h3>Games</h3>
+<div class="number">4</div>
+<p>Demo Categories</p>
+</div>
+
+<div class="card">
+<h3>Website Status</h3>
+<div class="number">LIVE</div>
+<p>PlayNova Online</p>
+</div>
+</div>
+
+<h2>User Management</h2>
+<div class="info">
+<p>User registration management will be available after backend integration.</p>
+<button onclick="alert('Demo feature only')">View Users</button>
+</div>
+
+<h2>Game Management</h2>
+<div class="info">
+<p>Slots — Demo</p>
+<p>Arcade — Demo</p>
+<p>Crash Games — Demo</p>
+<p>Live Games — Demo</p>
+<button onclick="alert('Demo feature only')">Manage Games</button>
+</div>
+
+<h2>System Information</h2>
+<div class="info">
+<p>Platform: PlayNova</p>
+<p>Version: 1.0</p>
+<p>Environment: Demo</p>
+<p>Backend: Not Connected</p>
+</div>
+
+</div>
+
+<footer>© 2026 PlayNova Admin Panel</footer>
+
+</body>
+</html>
