@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlayNova - Gaming Platform</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#101323;color:white;font-family:Arial,sans-serif}
+header{background:#191e35;padding:20px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:26px;font-weight:bold;color:#9c7cff}
+nav a{color:white;text-decoration:none;margin-left:12px;font-size:13px}
+.hero{text-align:center;padding:65px 20px;background:linear-gradient(135deg,#25204e,#11172d)}
+.hero h1{font-size:38px;margin:0 0 15px}
+.hero p{color:#c4c5d4}
+.btn{display:inline-block;background:#8057f5;color:white;padding:13px 25px;border-radius:8px;text-decoration:none;margin-top:15px}
+.container{padding:25px 16px;max-width:1000px;margin:auto}
+h2{color:#b6a0ff}
+.games{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.game{background:#202640;border-radius:12px;padding:25px 10px;text-align:center}
+.game span{font-size:35px}
+.game h3{margin-bottom:5px}
+.game p{color:#bfc3d5;font-size:13px}
+footer{text-align:center;padding:25px;color:#999;background:#191e35;margin-top:30px}
+@media(min-width:650px){.games{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">PLAYNOVA</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#games">Games</a>
+<a href="#about">About</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h1>WELCOME TO PLAYNOVA</h1>
+<p>Your Entertainment, Your Gaming World.</p>
+<a href="#games" class="btn">Explore Games</a>
+</section>
+
+<section class="container" id="games">
+<h2>Our Game Categories</h2>
+<div class="games">
+<div class="game"><span>🎰</span><h3>Slot Games</h3><p>Explore the collection</p></div>
+<div class="game"><span>🎮</span><h3>Arcade Games</h3><p>Fun gaming experiences</p></div>
+<div class="game"><span>🚀</span><h3>Crash Games</h3><p>Explore game demos</p></div>
+<div class="game"><span>🎲</span><h3>Live Games</h3><p>Discover the collection</p></div>
+</div>
+</section>
+
+<section class="container" id="about">
+<h2>About PlayNova</h2>
+<p>PlayNova is your online entertainment destination. Discover games and enjoy a modern gaming experience.</p>
+</section>
+
+<footer>© 2026 PlayNova. All rights reserved.</footer>
+</body>
+</html>
